@@ -5,13 +5,12 @@ import './css/banner.css'
 const Banner = ()=> {
   const [movies, UpdateMovies] = useState({});
 
-  //   const baseImageUrl = "https://image.tmdb.org/t/p/w500";
   const baseUrl = "https://image.tmdb.org/t/p/original/";
   useEffect(() => {
      const fetchData = async ()=> {
 
       const request = await axios.get(
-        "https://api.themoviedb.org/3/discover/tv?api_key=4a6fd5c43b94e7c2b26f73a1ddf3438a&with_networks=213/discover/tv?api_key=4a6fd5c43b94e7c2b26f73a1ddf3438a&with_networks=213"
+        `https://api.themoviedb.org/3/discover/tv?api_key=${process.env.REACT_APP_TMDB_KEY}&with_networks=213/discover/tv?api_key=${process.env.REACT_APP_TMDB_KEY}&with_networks=213`
       );
 
       const Random = Math.floor(Math.random() * 20);

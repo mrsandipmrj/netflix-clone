@@ -20,11 +20,9 @@ const Row = (props)=> {
     fetchData();
   }, [props.fetchUrl]);
 
-
   return (
     <div className="">
       <h4>{props.title}</h4>
-       console.log(props)
       <div className="flex row">
         {movies.map((movie) => {
           return (

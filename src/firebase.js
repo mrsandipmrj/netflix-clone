@@ -2,13 +2,13 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
 firebase.initializeApp({
-  apiKey: "AIzaSyDK_V4Evg24XTHSRy2_HuAOQ-gabgQA3Ag",
-  authDomain: "netflix-85f45.firebaseapp.com",
-  databaseURL: "https://netflix-85f45-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "netflix-85f45",
-  storageBucket: "netflix-85f45.appspot.com",
-  messagingSenderId: "281858155231",
-  appId: "1:281858155231:web:e43d548c71f62585047f6a"
+  apiKey:`${process.env.REACT_APP_FIREBASE_KEY}`,
+  authDomain:process.env.REACT_APP_authDomain,
+  databaseURL:process.env.REACT_APP_databaseURL,
+  projectId:process.env.REACT_APP_projectId,
+  storageBucket:process.env.REACT_APP_storageBucket,
+  messagingSenderId:process.env.REACT_APP_messagingSenderId,
+  appId:process.env.REACT_APP_appId
 });
 
 export const auth = firebase.auth();

@@ -39,7 +39,6 @@ const App = (props)=> {
 const handelLoginStatus = (status)=> {
     setLoginStatus(status);
   }
-
   return (
     <div>
       <Header LoginStatus={loginStatus} handelLoginStatus={handelLoginStatus} />

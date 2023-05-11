@@ -1,0 +1,77 @@
+/* heading CSS */
+h1{
+    font-size: 2rem;
+    display: flex;
+    position: relative;
+    margin-left: 3vmax;;
+    top:2vmax;
+}
+
+/* user input CSS ---> Date Time Duration */
+.form{
+    margin:0 1vmax;
+    display: flex;
+    flex-direction: row;
+}
+label{
+    display:block;
+    margin-bottom: 6px;
+    font-size:1.5rem;
+}
+input{
+    width:26.5vmax;
+    border:1px solid rgba(0, 0, 0, 0.192);
+    border-radius: 3px;
+    height:2.5rem;
+    padding:0 12px;
+}
+
+.form > *{
+    margin:4vmax 2vmax;
+}
+
+.submit-btn{
+    font-size:1.5rem;
+    position: absolute;
+    padding:8px 25px;
+    background-color: blue;
+    color:white;
+    border-radius: 6px;
+    border: none;
+}
+/* Free Busy Slot Bar */
+.p-bar{
+    margin:3vmax 3vmax;
+    width:93.4%;
+    height: 4rem;
+    font-size: 1rem;
+    left:3vmax;
+    top:2vmax;
+    background-color:#7afcff;
+
+}
+
+/* color to Identify which Slot are busy or Free CSS */
+.color-to-check{
+    margin-left:2.5vmax;
+    margin-top:6vmax;
+    display: flex;
+}
+
+span{
+    margin:0 1vmax;
+}
+
+.busy{
+    margin-top:6px;
+    width:16px;
+    height:12px;
+    background-color: #c4c4c4;
+}
+
+.free{
+    margin-top:6px;
+    width:16px;
+    height:12px;
+    background-color: #00ff3f;
+}
